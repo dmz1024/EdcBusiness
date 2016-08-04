@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eee"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/tv_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="@dimen/size50"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="会员"
+        android:textSize="@dimen/sp18" />
+    <View
+        android:id="@+id/view_search"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/size15"
+        android:layout_marginRight="@dimen/size10"
+        android:background="@mipmap/icon_search"
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"/>
 
-        <TextView
-            android:id="@+id/tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center" />
-    </LinearLayout>
-</ScrollView>
+    <FrameLayout
+        android:id="@+id/fg"
+        android:layout_below="@id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

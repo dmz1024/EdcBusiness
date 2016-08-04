@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+    <View
+        android:id="@+id/view_top"
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size10"/>
+
+    <com.ediancha.edcbusiness.view.Color2Text
+        android:id="@+id/tv_nick"
+        android:layout_below="@id/view_top"
+        style="@style/TextSize14Color333"
+        android:text="会员昵称：会飞的花花"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_marginLeft="@dimen/size10"
+        tool:Color2Text_color="#51b338"
+        tool:Color2Text_content="（默认等级）"
+        tool:Color2Text_size="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_below="@id/tv_nick"
+        android:layout_marginTop="@dimen/size7"
+        android:layout_marginLeft="@dimen/size10"
+        style="@style/TextSize13Color666"
+        android:text="平台币：0.00" />
+
+    <TextView
+        android:id="@+id/tv_money_1"
+        android:layout_below="@id/tv_nick"
+        android:layout_marginTop="@dimen/size5"
+        style="@style/TextSize13Color666"
+        android:layout_centerHorizontal="true"
+        android:text="可用平台币：0.00" />
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_nick"
+        android:layout_marginTop="@dimen/size5"
+        style="@style/TextSize13Color666"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_centerHorizontal="true"
+        android:text="积分：0.00" />
+
+    <View
+        android:id="@+id/view"
+        android:background="#e1e1e1"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_below="@id/tv_money"
+        android:layout_marginTop="@dimen/size7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"/>
+
+    <Button
+        android:id="@+id/bt_vip"
+        android:layout_below="@id/view"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_alignParentRight="true"
+        android:text="会员卡"
+        android:textSize="@dimen/sp12"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginBottom="@dimen/size10"
+        android:textColor="#fff"
+        android:background="@drawable/selector_51b338"
+        android:layout_width="@dimen/size65"
+        android:layout_height="@dimen/size23" />
+
+
+</RelativeLayout>

@@ -1,15 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#eee"
         android:orientation="vertical">
+
         <TextView
-            android:id="@+id/tv"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="更多"
+            android:textSize="@dimen/sp18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            android:paddingRight="@dimen/size10"
+            android:paddingTop="@dimen/size10"
+            android:paddingLeft="@dimen/size10"
+            >
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/size56"
+                android:layout_height="@dimen/size56"
+                android:scaleType="fitXY" />
+            <com.ediancha.edcbusiness.view.Color2Text
+                android:text="艺草堂"
+                android:layout_toRightOf="@id/iv_head"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_centerVertical="true"
+                tool:Color2Text_color="#999"
+                tool:Color2Text_size="@dimen/sp15"
+                tool:Color2Text_content="\n18326167257"
+                android:lineSpacingExtra="@dimen/size8"
+                style="@style/TextSize15Color333" />
+            <View
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_go"
+                android:layout_width="@dimen/size5"
+                android:layout_height="@dimen/size10"/>
+            <View
+                android:background="#e1e1e1"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_below="@id/iv_head"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"/>
+        </RelativeLayout>
+
+        <com.ediancha.edcbusiness.view.TitleRelativeLayout
+            android:layout_width="match_parent"
+            android:background="#fff"
+            tool:TitleRelativeLayout_title="亦草堂"
+            tool:TitleRelativeLayout_content="切换店铺"
+            android:layout_height="wrap_content"/>
+
+        <com.ediancha.edcbusiness.view.TitleRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            tool:TitleRelativeLayout_title_image="@mipmap/icon_more_notice"
+            tool:TitleRelativeLayout_title_w="@dimen/size16"
+            tool:TitleRelativeLayout_title_h="@dimen/size21"
+            tool:TitleRelativeLayout_title="消息通知"
+            tool:TitleRelativeLayout_show_view="2"
+            android:layout_height="wrap_content"/>
+
+        <com.ediancha.edcbusiness.view.TitleRelativeLayout
+            android:layout_width="match_parent"
+            android:background="#fff"
+            tool:TitleRelativeLayout_title_image="@mipmap/icon_more_message"
+            tool:TitleRelativeLayout_title_w="@dimen/size16"
+            tool:TitleRelativeLayout_title_h="@dimen/size21"
+            tool:TitleRelativeLayout_title="系统消息"
+            android:layout_height="wrap_content"/>
+
+        <com.ediancha.edcbusiness.view.TitleRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            tool:TitleRelativeLayout_title_image="@mipmap/icon_more_update"
+            tool:TitleRelativeLayout_title_w="@dimen/size15"
+            tool:TitleRelativeLayout_title_h="@dimen/size17"
+            tool:TitleRelativeLayout_title="版本更新"
+            tool:TitleRelativeLayout_content="已是最新版本"
+            tool:TitleRelativeLayout_content_style="@style/TextSize14Color51b338"
+            tool:TitleRelativeLayout_show_view="2"
+            android:layout_height="wrap_content"/>
+
+        <com.ediancha.edcbusiness.view.TitleRelativeLayout
+            android:layout_width="match_parent"
+            android:background="#fff"
+            tool:TitleRelativeLayout_title_image="@mipmap/icon_more_aboutus"
+            tool:TitleRelativeLayout_title_w="@dimen/size16"
+            tool:TitleRelativeLayout_title_h="@dimen/size19"
+            tool:TitleRelativeLayout_title="关于我们"
+            tool:TitleRelativeLayout_show_view="2"
+            android:layout_height="wrap_content"/>
+
+        <com.ediancha.edcbusiness.view.TitleRelativeLayout
+            android:layout_width="match_parent"
+            android:background="#fff"
+            tool:TitleRelativeLayout_title_image="@mipmap/icon_more_tel"
+            tool:TitleRelativeLayout_title_w="@dimen/size16"
+            tool:TitleRelativeLayout_title_h="@dimen/size19"
+            tool:TitleRelativeLayout_title="咨询客服"
+            tool:TitleRelativeLayout_view_visi="false"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </ScrollView>
